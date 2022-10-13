@@ -1,17 +1,23 @@
-body{
+.all-container{
     height: 100vh;
 }
 
 header{
-    height: 100px;   
+    height: 70px;   
 }
 
 main{
-    height: calc( 100vh - 100px );
+    height: calc( 100vh - 70px );
 }
 
 .bg-img{
     background-image: url("../img/sidebar-bg.png");   
-    height: calc( 100vh - 100px );
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.badge-custom{
+    background-color: #155CBA;
 }
 

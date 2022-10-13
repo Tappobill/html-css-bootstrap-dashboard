@@ -12,80 +12,127 @@
 
 <body>
 
-    <header class="container-fluid m-0">
+    <div class="all-container">
 
-        <div class="row">
+        <header class="d-flex align-items-center">
 
-            <div class="col-2 col-lg-2 d-flex  align-items-center mt-3">
-                <img src="img/mobile-logo.png" class="w-50 d-lg-none" alt="logomobile">
-                <img src="img/logo.svg" class="d-lg-block d-none" alt="logo">
-            </div>
+            <div class="container-fluid">
 
-            <div class="col-8 col-lg-8 d-flex justify-content-center align-items-center mt-3">               
-                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Vorrei buttarmi dal balcone">
-            </div>
-
-            <div class="col-2 col-lg-2 d-flex align-items-center mt-3">
-                <div class="d-lg-block d-none">
-                    <i class="fa-solid fa-list me-2"></i>
-                    <i class="fa-solid fa-circle-question me-2"></i>
-                    <i class="fa-solid fa-ellipsis-vertical me-2"></i>
-                </div>
-
-                <div class="dropdown">                    
-                    <button class="btn btn-outline-light type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fa-solid fa-bell text-warning"></i>
-                      </button>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Profilo</a></li>
-                        <li><a class="dropdown-item" href="#">Fatturazione</a></li>
-                        <li><a class="dropdown-item" href="#">Logout</a></li>
-                      </ul>
-                </div>
-            </div>
-
-        </div>
-
-    </header>
-
-
-    <main class="container-fluid">
-
-        <div class="row">
-
-            <div class="col-1 col-md-1 col-lg-2 bg-img bg-dark text-white d-flex flex-column justify-content-between">
-                
-                <div class="d-flex flex-column align-items-center">
-                    <div class="d-flex align-items-center">
-                        <i class="fa-solid fa-house m-2"></i>
-                        <span class="d-lg-block d-none">Home</span>
+                <div class="row align-items-center justify-content-center">
+    
+                    <div class="col-1">
+                        <img src="img/mobile-logo.png" class="d-lg-none img-fluid" alt="logomobile">
+                        <img src="img/logo.svg" class="d-lg-block d-none img-fluid" alt="logo">
                     </div>
-                    <div class="d-flex align-items-center">
-                        <i class="fa-solid fa-chart-simple m-2"></i>
-                        <span class="d-lg-block d-none">Stats</span>
+        
+                    <div class="col-10">               
+                       <div class="input-group">
+                        <span class="input-group-text" id="basic-addon1">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Voglio buttarmi dal balcone" aria-label="Usernam" aria-describedby="basic-addon1">
+                       </div>
                     </div>
-                    <div class="d-flex align-items-center">
-                        <i class="fa-solid fa-signal m-2"></i>
-                        <span class="d-lg-block d-none">Signals</span>
+        
+                    <div class="col-1 d-flex  justify-content-around align-items-center">                        
+                        <i class="fa-solid fa-list d-lg-block d-none"></i>
+                        <i class="fa-solid fa-circle-question d-lg-block d-none"></i>
+                        <i class="fa-solid fa-ellipsis-vertical d-lg-block d-none"></i>        
+                        <div class="btn-group">                    
+                            <span type="button" class="btn btn-outline-light border-0"  data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-bell text-warning"></i>
+                            </span>
+                            <ul class="dropdown-menu drpdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Profilo</a></li>
+                            <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-
-                <div class="d-flex flex-column align-items-center">                    
-                    <div class="d-flex align-items-center">
-                        <i class="fa-solid fa-gear mb-4 me-2"></i>
-                        <span class="d-lg-block d-none mb-4">Admin</span>
-                    </div>
+        
                 </div>
 
             </div>
+    
+        </header>
 
-            <div class="col-11 col-md-11 col-lg-10">
-                
+        <main>
+
+            <div class="container-fluid h-100">
+
+                <div class="row h-100">
+    
+                    <div class="col-2 bg-img bg-dark text-white d-flex flex-column justify-content-between">
+                        
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-solid fa-house m-2"></i>
+                                <span class="d-lg-block d-none">Home</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fa-solid fa-chart-simple m-2"></i>
+                                <span class="d-lg-block d-none">Stats</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fa-solid fa-signal m-2"></i>
+                                <span class="d-lg-block d-none">Signals</span>
+                            </div>
+                        </div>
+        
+                        <div class="d-flex flex-column align-items-center">                    
+                            <div class="d-flex align-items-center">
+                                <i class="fa-solid fa-gear mb-4 me-2"></i>
+                                <span class="d-lg-block d-none mb-4">Admin</span>
+                            </div>
+                        </div>
+        
+                    </div>
+        
+                    <div class="col-10 px-0">
+        
+                        <div class="container-fluid bg-primary text-white py-4">
+        
+                            <div class="row">
+        
+                                <div class="col-lg-8 mb-3">
+                                    <span class="fs-2">Boolean</span>
+                                    <span><span class="badge badge-custom rounded-pill">Piano blaze</span></span>
+                                    <div>
+                                        <span><span class="badge badge-custom rounded-pill">3 app</span></span>
+                                        <i class="fa-solid fa-angles-right"></i>
+                                        <span class="d-lg-none"><span class="badge badge-custom rounded-circle"><i class="fa-solid fa-plus"></i></span></span>
+                                        <span class="d-lg-inline-block d-none"><span class="badge badge-custom rounded-pill">Boolean mobile app</span></span>
+                                        <span class="d-lg-inline-block d-none"><span class="badge badge-custom rounded-pill">Boolean web app</span></span>
+                                        <span class="d-lg-inline-block d-none"><span class="badge badge-custom rounded-pill">Boolean blog app</span></span>
+                                    </div>
+                                </div>
+        
+                                <div class="col-lg-4">
+                                    Studenti online negli ultimi 30 minuti
+                                    <div class="fs-1">
+                                        125
+                                    </div>
+                                </div>
+        
+                            </div>
+        
+                        </div>                        
+        
+                    </div>
+        
+                </div>
+
             </div>
 
-        </div>
+    
+        </main>
 
-    </main>
+    </div>
+
+
+
+
+
 
 
 
