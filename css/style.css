@@ -1,13 +1,13 @@
-.all-container{
-    height: 100vh;
-}
-
 header{
     height: 70px;   
 }
 
+html, body {
+    height: 100%;
+}
+
 main{
-    height: calc( 100vh - 70px );
+   min-height: calc( 100vh - 70px );   
 }
 
 .bg-img{
@@ -21,3 +21,6 @@ main{
     background-color: #155CBA;
 }
 
+.img-card{
+    max-width: 30px;
+}

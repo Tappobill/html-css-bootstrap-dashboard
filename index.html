@@ -1,143 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <div class="all-container">
+  <header class="d-flex align-items-center">
 
-        <header class="d-flex align-items-center">
+    <div class="container-fluid">
 
-            <div class="container-fluid">
+      <div class="row align-items-center justify-content-center">
 
-                <div class="row align-items-center justify-content-center">
-    
-                    <div class="col-1">
-                        <img src="img/mobile-logo.png" class="d-lg-none img-fluid" alt="logomobile">
-                        <img src="img/logo.svg" class="d-lg-block d-none img-fluid" alt="logo">
-                    </div>
-        
-                    <div class="col-10">               
-                       <div class="input-group">
-                        <span class="input-group-text" id="basic-addon1">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </span>
-                        <input type="text" class="form-control" placeholder="Voglio buttarmi dal balcone" aria-label="Usernam" aria-describedby="basic-addon1">
-                       </div>
-                    </div>
-        
-                    <div class="col-1 d-flex  justify-content-around align-items-center">                        
-                        <i class="fa-solid fa-list d-lg-block d-none"></i>
-                        <i class="fa-solid fa-circle-question d-lg-block d-none"></i>
-                        <i class="fa-solid fa-ellipsis-vertical d-lg-block d-none"></i>        
-                        <div class="btn-group">                    
-                            <span type="button" class="btn btn-outline-light border-0"  data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa-solid fa-bell text-warning"></i>
-                            </span>
-                            <ul class="dropdown-menu drpdown-menu-end">
-                            <li><a class="dropdown-item" href="#">Profilo</a></li>
-                            <li><a class="dropdown-item" href="#">Fatturazione</a></li>
-                            <li><a class="dropdown-item" href="#">Logout</a></li>
-                            </ul>
-                        </div>
-                    </div>
-        
-                </div>
+        <div class="col-1">
+          <img src="img/mobile-logo.png" class="d-lg-none img-fluid" alt="logomobile">
+          <img src="img/logo.svg" class="d-lg-block d-none img-fluid" alt="logo">
+        </div>
 
-            </div>
-    
-        </header>
+        <div class="col-10">
+          <div class="input-group">
+            <span class="input-group-text" id="basic-addon1">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <input type="text" class="form-control" placeholder="Voglio buttarmi dal balcone" aria-label="Usernam"
+              aria-describedby="basic-addon1">
+          </div>
+        </div>
 
-        <main>
+        <div class="col-1 d-flex  justify-content-around align-items-center">
+          <i class="fa-solid fa-list d-lg-block d-none"></i>
+          <i class="fa-solid fa-circle-question d-lg-block d-none"></i>
+          <i class="fa-solid fa-ellipsis-vertical d-lg-block d-none"></i>
+          <div class="btn-group">
+            <button  class="btn btn-outline-light border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-bell text-warning"></i>
+            </button>
+            <ul class="dropdown-menu drpdown-menu-end">
+              <li><a class="dropdown-item" href="#">Profilo</a></li>
+              <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+          </div>
+        </div>
 
-            <div class="container-fluid h-100">
-
-                <div class="row h-100">
-    
-                    <div class="col-2 bg-img bg-dark text-white d-flex flex-column justify-content-between">
-                        
-                        <div class="d-flex flex-column align-items-center">
-                            <div class="d-flex align-items-center">
-                                <i class="fa-solid fa-house m-2"></i>
-                                <span class="d-lg-block d-none">Home</span>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <i class="fa-solid fa-chart-simple m-2"></i>
-                                <span class="d-lg-block d-none">Stats</span>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <i class="fa-solid fa-signal m-2"></i>
-                                <span class="d-lg-block d-none">Signals</span>
-                            </div>
-                        </div>
-        
-                        <div class="d-flex flex-column align-items-center">                    
-                            <div class="d-flex align-items-center">
-                                <i class="fa-solid fa-gear mb-4 me-2"></i>
-                                <span class="d-lg-block d-none mb-4">Admin</span>
-                            </div>
-                        </div>
-        
-                    </div>
-        
-                    <div class="col-10 px-0">
-        
-                        <div class="container-fluid bg-primary text-white py-4">
-        
-                            <div class="row">
-        
-                                <div class="col-lg-8 mb-3">
-                                    <span class="fs-2">Boolean</span>
-                                    <span><span class="badge badge-custom rounded-pill">Piano blaze</span></span>
-                                    <div>
-                                        <span><span class="badge badge-custom rounded-pill">3 app</span></span>
-                                        <i class="fa-solid fa-angles-right"></i>
-                                        <span class="d-lg-none"><span class="badge badge-custom rounded-circle"><i class="fa-solid fa-plus"></i></span></span>
-                                        <span class="d-lg-inline-block d-none"><span class="badge badge-custom rounded-pill">Boolean mobile app</span></span>
-                                        <span class="d-lg-inline-block d-none"><span class="badge badge-custom rounded-pill">Boolean web app</span></span>
-                                        <span class="d-lg-inline-block d-none"><span class="badge badge-custom rounded-pill">Boolean blog app</span></span>
-                                    </div>
-                                </div>
-        
-                                <div class="col-lg-4">
-                                    Studenti online negli ultimi 30 minuti
-                                    <div class="fs-1">
-                                        125
-                                    </div>
-                                </div>
-        
-                            </div>
-        
-                        </div>                        
-        
-                    </div>
-        
-                </div>
-
-            </div>
-
-    
-        </main>
+      </div>
 
     </div>
 
+  </header>
+
+  <main class="d-flex">
+
+    <div class="container-fluid min-h-100 px-0">
+
+      <div class="row h-100 g-0">
+
+        <div class="col-2">
+
+          <div class="bg-img bg-dark text-white d-flex flex-column justify-content-between">
+
+            <div class="d-flex flex-column align-items-center">
+              <div class="d-flex align-items-center">
+                <i class="fa-solid fa-house m-2"></i>
+                <span class="d-lg-block d-none">Home</span>
+              </div>
+              <div class="d-flex align-items-center">
+                <i class="fa-solid fa-chart-simple m-2"></i>
+                <span class="d-lg-block d-none">Stats</span>
+              </div>
+              <div class="d-flex align-items-center">
+                <i class="fa-solid fa-signal m-2"></i>
+                <span class="d-lg-block d-none">Signals</span>
+              </div>
+            </div>
+
+            <div class="d-flex flex-column align-items-center">
+              <div class="d-flex align-items-center">
+                <i class="fa-solid fa-gear mb-4 me-2"></i>
+                <span class="d-lg-block d-none mb-4">Admin</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
 
 
+        <div class="col-10 overflow-scroll h-100">
+
+          <div class="container-fluid bg-primary text-white py-4">
+
+            <div class="row">
+
+              <div class="col-lg-8 mb-3">
+                <span class="fs-2">Boolean</span>
+                <span><span class="badge badge-custom rounded-pill">Piano blaze</span></span>
+                <div>
+                  <span><span class="badge badge-custom rounded-pill">3 app</span></span>
+                  <i class="fa-solid fa-angles-right"></i>
+                  <span class="d-lg-none"><span class="badge badge-custom rounded-circle"><i
+                        class="fa-solid fa-plus"></i></span></span>
+                  <span class="d-lg-inline-block d-none"><span class="badge badge-custom rounded-pill">Boolean mobile
+                      app</span></span>
+                  <span class="d-lg-inline-block d-none"><span class="badge badge-custom rounded-pill">Boolean web
+                      app</span></span>
+                  <span class="d-lg-inline-block d-none"><span class="badge badge-custom rounded-pill">Boolean blog
+                      app</span></span>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                Studenti online negli ultimi 30 minuti
+                <div class="fs-1">
+                  125
+                </div>
+              </div>
+
+            </div>
+
+          </div>
 
 
+          <div class="container-fluid">
+
+            <div class="row">
+
+              <div class="col-12 col-lg-8">
+
+                <div class="card p-0 mb-4 mt-2">
+
+                  <div class="card-header d-flex justify-content-between bg-light">
+                    <h3 class="card-title">Prossime classi</h3>
+                    <div class="fs-4"><span class="badge badge-custom text-primary bg-white btn btn-primary"><i
+                          class="fa-solid fa-plus"></i></span></div>
+                  </div>
+
+                  <div class="card-body">
+
+                    <table class="table">
+
+                      <thead>
+                        <tr class="table">
+                          <th scope="col">Nome</th>
+                          <th scope="col" class="d-none d-lg-table-cell text-center">Data inizio</th>
+                          <th scope="col" class="d-none d-md-table-cell text-center">ROI</th>
+                          <th scope="col" class="text-center">Stato</th>
+                          <th scope="col" class="text-center">Azioni</th>
+                        </tr>
+                      </thead>
+
+                      <tbody class="table-group-divider">
+                        <tr>
+                          <td><img class="img-card me-2" src="img/class-avatar.jpg" alt="class- avatar">Classe 75</td>
+                          <td class="d-none d-lg-table-cell text-center">15 Feb 2021</td>
+                          <td class="d-none d-md-table-cell text-center">20%</td>
+                          <td class="text-center"><span class="badge text-bg-success">Done</span></td>
+                          <td class="d-flex text-secondary justify-content-around"><i
+                              class="fa-solid fa-pencil p-2"></i><i class="fa-solid fa-trash p-2"></i></td>
+                        </tr>
+
+                        <tr>
+                          <td><img class="img-card me-2" src="img/class-avatar.jpg" alt="class- avatar">Classe 76</td>
+                          <td class="d-none d-lg-table-cell text-center">16 Feb 2021</td>
+                          <td class="d-none d-md-table-cell text-center">20%</td>
+                          <td class="text-center"><span class="badge text-bg-success">Done</span></td>
+                          <td class="d-flex text-secondary justify-content-around"><i
+                              class="fa-solid fa-pencil p-2"></i><i class="fa-solid fa-trash p-2"></i></td>
+                        </tr>
+
+                        <tr>
+                          <td><img class="img-card me-2" src="img/class-avatar.jpg" alt="class- avatar">Classe 77</td>
+                          <td class="d-none d-lg-table-cell text-center">17 Feb 2021</td>
+                          <td class="d-none d-md-table-cell text-center">20%</td>
+                          <td class="text-center"><span class="badge text-bg-warning text-light">Process</span></td>
+                          <td class="d-flex text-secondary justify-content-around"><i
+                              class="fa-solid fa-pencil p-2"></i><i class="fa-solid fa-trash p-2"></i></td>
+                        </tr>
+
+                        <tr>
+                          <td><img class="img-card me-2" src="img/class-avatar.jpg" alt="class- avatar">Classe 78</td>
+                          <td class="d-none d-lg-table-cell text-center">18 Feb 2021</td>
+                          <td class="d-none d-md-table-cell text-center">20%</td>
+                          <td class="text-center"><span class="badge text-bg-success">Done</span></td>
+                          <td class="d-flex text-secondary justify-content-around"><i
+                              class="fa-solid fa-pencil p-2"></i><i class="fa-solid fa-trash p-2"></i></td>
+                        </tr>
+
+                        <tr>
+                          <td><img class="img-card me-2" src="img/class-avatar.jpg" alt="class- avatar">Classe 79</td>
+                          <td class="d-none d-lg-table-cell text-center">19 Feb 2021</td>
+                          <td class="d-none d-md-table-cell text-center">20%</td>
+                          <td class="text-center"><span class="badge text-bg-danger">Failed</span></td>
+                          <td class="d-flex text-secondary justify-content-around"><i
+                              class="fa-solid fa-pencil p-2"></i><i class="fa-solid fa-trash p-2"></i></td>
+                        </tr>
+
+                        <tr>
+                          <td><img class="img-card me-2" src="img/class-avatar.jpg" alt="class- avatar">Classe 80</td>
+                          <td class="d-none d-lg-table-cell text-center">20 Feb 2021</td>
+                          <td class="d-none d-md-table-cell text-center">20%</td>
+                          <td class="text-center"><span class="badge text-bg-success">Done</span></td>
+                          <td class="d-flex text-secondary justify-content-around"><i
+                              class="fa-solid fa-pencil p-2"></i><i class="fa-solid fa-trash p-2"></i></td>
+                        </tr>
+
+                        <tr>
+                          <td><img class="img-card me-2" src="img/class-avatar.jpg" alt="class- avatar">Classe 81</td>
+                          <td class="d-none d-lg-table-cell text-center">21 Feb 2021</td>
+                          <td class="d-none d-md-table-cell text-center">20%</td>
+                          <td class="text-center"><span class="badge text-bg-danger">Failed</span></td>
+                          <td class="d-flex text-secondary justify-content-around"><i
+                              class="fa-solid fa-pencil p-2"></i><i class="fa-solid fa-trash p-2"></i></td>
+                        </tr>
+
+                        <tr>
+                          <td><img class="img-card me-2" src="img/class-avatar.jpg" alt="class- avatar">Classe 82</td>
+                          <td class="d-none d-lg-table-cell text-center">22 Feb 2021</td>
+                          <td class="d-none d-md-table-cell text-center">20%</td>
+                          <td class="text-center"><span class="badge text-bg-success">Done</span></td>
+                          <td class="d-flex text-secondary justify-content-around"><i
+                              class="fa-solid fa-pencil p-2"></i><i class="fa-solid fa-trash p-2"></i></td>
+                        </tr>
+
+                      </tbody>
+
+                    </table>
+
+                  </div>
+
+                </div>
 
 
+                <div class="card mt-4">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    
+                  <div class="card-header fs-3">
+                    F.A.Q
+                  </div>
+
+                  <div class="accordion" id="accordionExample">
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Come aggiungere una nuova classe?
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the
+                          collapse plugin adds the appropriate classes that we use to style each element. These classes
+                          control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                          modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                          that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                          does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Come posso accedere alle informazioni del mio account?
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+                          collapse plugin adds the appropriate classes that we use to style each element. These classes
+                          control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                          modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                          that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                          does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Posso usare questa dashboard da mobile?
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                          collapse plugin adds the appropriate classes that we use to style each element. These classes
+                          control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                          modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                          that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                          does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+
+              <div class="col-12 mt-4 col-lg-4">
+
+                <div class="card">
+
+                  <div class="card-header fs-3">
+                    Todo
+                  </div>
+
+                  <div class="card m-3">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item d-flex align-items-center"><input class="form-check-input mt-0 me-2"
+                          type="checkbox" value="" aria-label="Checkbox for following text input"> Kickoff nuove classi
+                      </li>
+                      <li class="list-group-item d-flex align-items-center"><input class="form-check-input mt-0 me-2"
+                          type="checkbox" value="" aria-label="Checkbox for following text input"> Lezione su Bootstrap
+                        5 in classe #75</li>
+                      <li class="list-group-item d-flex align-items-center"><input class="form-check-input mt-0 me-2"
+                          type="checkbox" value="" aria-label="Checkbox for following text input"> Controllare username
+                        github studenti</li>
+                    </ul>
+                  </div>
+
+                </div>
+
+                <div class="card mt-4">
+
+                  <div class="card-header bg-white border-0 p-0">
+                  </div>
+
+                  <div class="card mt-4 m-3">
+                    <img src="img/chart.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Utenti attivi</h5>
+                      <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Gennaio: 1200</li>
+                      <li class="list-group-item">Febbraio: 800</li>
+                      <li class="list-group-item">Marzo: 1500</li>
+                    </ul>
+                    <div class="card-body">
+                      <a href="#" class="card-link">Visualizza report approfondito</a>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
 </body>
 
 </html>
