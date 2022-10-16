@@ -71,22 +71,22 @@
           <div class="bg-img bg-dark text-white d-flex flex-column justify-content-between">
 
             <div class="d-flex flex-column align-items-center">
-              <div class="d-flex align-items-center">
+              <div class="d-flex align-items-center hov-side">
                 <i class="fa-solid fa-house m-2"></i>
                 <span class="d-lg-block d-none">Home</span>
               </div>
-              <div class="d-flex align-items-center">
+              <div class="d-flex align-items-center hov-side">
                 <i class="fa-solid fa-chart-simple m-2"></i>
                 <span class="d-lg-block d-none">Stats</span>
               </div>
-              <div class="d-flex align-items-center">
+              <div class="d-flex align-items-center hov-side">
                 <i class="fa-solid fa-signal m-2"></i>
                 <span class="d-lg-block d-none">Signals</span>
               </div>
             </div>
 
             <div class="d-flex flex-column align-items-center">
-              <div class="d-flex align-items-center">
+              <div class="d-flex align-items-center hov-side">
                 <i class="fa-solid fa-gear mb-4 me-2"></i>
                 <span class="d-lg-block d-none mb-4">Admin</span>
               </div>
@@ -155,10 +155,9 @@
                       </div>
                       <div class="offcanvas-body">
                         <form class="row g-3">
-                          <div class="input-group flex-nowrap col-md-6">
-                            <span class="input-group-text" id="addon-wrapping">@</span>
-                            <input type="text" class="form-control" placeholder="E-mail" aria-label="Username"
-                              aria-describedby="addon-wrapping">
+                          <div class="col-md-6">
+                            <label for="inputEmail4" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4">
                           </div>
                           <div class="col-md-6">
                             <label for="exampleInputPassword1" class="form-label">Password</label>
@@ -178,12 +177,12 @@
                           </div>
                           <div class="col-md-4">
                             <label for="exampleInputIndirizzo1" class="form-label">Stato</label>
-                            <select class="form-select" aria-label="Default select example">                              
+                            <select class="form-select" aria-label="Default select example">
                               <option selected>Scegli...</option>
                               <option value="1">Qui</option>
                               <option value="2">Quo</option>
                               <option value="3">Qua</option>
-                            </select>                            
+                            </select>
                           </div>
                           <div class="col-md-2">
                             <label for="exampleInputCap1" class="form-label">Cap</label>
@@ -233,7 +232,7 @@
                           <td class="d-none d-md-table-cell text-center">20%</td>
                           <td class="text-center"><span class="badge text-bg-success">Done</span></td>
                           <td class="d-flex text-secondary justify-content-around"><i
-                              class="fa-solid fa-pencil p-2"></i><i class="fa-solid fa-trash p-2"></i></td>
+                              class="fa-solid fa-pencil p-2 border border-secondary"></i><i class="fa-solid fa-trash p-2 border border-secondary"></i></td>
                         </tr>
 
                         <tr>
@@ -242,7 +241,7 @@
                           <td class="d-none d-md-table-cell text-center">20%</td>
                           <td class="text-center"><span class="badge text-bg-success">Done</span></td>
                           <td class="d-flex text-secondary justify-content-around"><i
-                              class="fa-solid fa-pencil p-2"></i><i class="fa-solid fa-trash p-2"></i></td>
+                              class="fa-solid fa-pencil p-2 border border-secondary"></i><i class="fa-solid fa-trash p-2 border border-secondary"></i></td>
                         </tr>
 
                         <tr>
@@ -251,7 +250,7 @@
                           <td class="d-none d-md-table-cell text-center">20%</td>
                           <td class="text-center"><span class="badge text-bg-warning text-light">Process</span></td>
                           <td class="d-flex text-secondary justify-content-around"><i
-                              class="fa-solid fa-pencil p-2"></i><i class="fa-solid fa-trash p-2"></i></td>
+                              class="fa-solid fa-pencil p-2 border border-secondary"></i><i class="fa-solid fa-trash p-2 border border-secondary"></i></td>
                         </tr>
 
                         <tr>
@@ -260,7 +259,7 @@
                           <td class="d-none d-md-table-cell text-center">20%</td>
                           <td class="text-center"><span class="badge text-bg-success">Done</span></td>
                           <td class="d-flex text-secondary justify-content-around"><i
-                              class="fa-solid fa-pencil p-2"></i><i class="fa-solid fa-trash p-2"></i></td>
+                              class="fa-solid fa-pencil p-2 border border-secondary"></i><i class="fa-solid fa-trash p-2 border border-secondary"></i></td>
                         </tr>
 
                         <tr>
@@ -269,7 +268,7 @@
                           <td class="d-none d-md-table-cell text-center">20%</td>
                           <td class="text-center"><span class="badge text-bg-danger">Failed</span></td>
                           <td class="d-flex text-secondary justify-content-around"><i
-                              class="fa-solid fa-pencil p-2"></i><i class="fa-solid fa-trash p-2"></i></td>
+                              class="fa-solid fa-pencil p-2 border border-secondary"></i><i class="fa-solid fa-trash p-2 border border-secondary"></i></td>
                         </tr>
 
                         <tr>
@@ -278,7 +277,7 @@
                           <td class="d-none d-md-table-cell text-center">20%</td>
                           <td class="text-center"><span class="badge text-bg-success">Done</span></td>
                           <td class="d-flex text-secondary justify-content-around"><i
-                              class="fa-solid fa-pencil p-2"></i><i class="fa-solid fa-trash p-2"></i></td>
+                              class="fa-solid fa-pencil p-2 border border-secondary"></i><i class="fa-solid fa-trash p-2 border border-secondary"></i></td>
                         </tr>
 
                         <tr>
@@ -287,7 +286,7 @@
                           <td class="d-none d-md-table-cell text-center">20%</td>
                           <td class="text-center"><span class="badge text-bg-danger">Failed</span></td>
                           <td class="d-flex text-secondary justify-content-around"><i
-                              class="fa-solid fa-pencil p-2"></i><i class="fa-solid fa-trash p-2"></i></td>
+                              class="fa-solid fa-pencil p-2 border border-secondary"></i><i class="fa-solid fa-trash p-2 border border-secondary"></i></td>
                         </tr>
 
                         <tr>
@@ -296,7 +295,7 @@
                           <td class="d-none d-md-table-cell text-center">20%</td>
                           <td class="text-center"><span class="badge text-bg-success">Done</span></td>
                           <td class="d-flex text-secondary justify-content-around"><i
-                              class="fa-solid fa-pencil p-2"></i><i class="fa-solid fa-trash p-2"></i></td>
+                              class="fa-solid fa-pencil p-2 border border-secondary"></i><i class="fa-solid fa-trash p-2 border border-secondary"></i></td>
                         </tr>
 
                       </tbody>

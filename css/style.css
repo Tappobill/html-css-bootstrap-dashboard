@@ -25,3 +25,27 @@ main{
 .img-card{
     max-width: 30px;
 }
+
+.img-fluid:hover{
+    cursor: pointer;
+}
+
+td > .fa-solid:hover{
+    cursor: pointer;
+    background-color: gray;
+}
+
+.hov-side:hover{
+    cursor: pointer;
+    background-color: lightgray;
+}
+
+.badge:hover{
+    cursor: pointer;
+    background-color: #1c4181;
+}
+
+tr:hover{
+    cursor: pointer;
+    background-color: lightgray;
+}
